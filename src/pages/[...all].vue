@@ -1,6 +1,10 @@
 <script lang="ts">
 import "mdui/mdui.css";
 import "mdui";
+
+export default {
+  // Component logic
+};
 </script>
 
 <template>

@@ -7,7 +7,6 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    BackToTop: typeof import('./src/components/BackToTop.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
     Main: typeof import('./src/components/Main.vue')['default']
@@ -15,7 +14,6 @@ declare module 'vue' {
     NavigationDrawer: typeof import('./src/components/NavigationDrawer.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Waline: typeof import('./src/components/Waline.vue')['default']
     WalineClient: typeof import('./src/components/WalineClient.vue')['default']
   }
 }

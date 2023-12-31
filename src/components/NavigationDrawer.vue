@@ -23,7 +23,7 @@
   </mdui-drawer>
 </template>
 
-<script lang="ts">
+<script>
 import "mdui/mdui.css";
 import "mdui";
 import "@mdui/icons/home.js";
@@ -31,9 +31,6 @@ import "@mdui/icons/balance.js";
 import "@mdui/icons/how-to-vote.js";
 import "@mdui/icons/outbound--outlined.js";
 
-export default {
-  // Component logic
-};
 </script>
 
 <style scoped>

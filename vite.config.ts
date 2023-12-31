@@ -4,9 +4,11 @@ import VitePages from "vite-plugin-pages";
 import ViteMarkdown from "vite-plugin-md";
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
+import commonjs from "@rollup/plugin-commonjs";
 
 export default defineConfig({
   plugins: [
+    commonjs(),
     ViteVue({
       include: [/\.vue$/, /\.md$/],
       template: {

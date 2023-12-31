@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 import "mdui/mdui.css";
 import "mdui";
 import { snackbar } from "mdui";
@@ -10,24 +10,6 @@ import "@mdui/icons/balance.js";
 import "@mdui/icons/balance--outlined.js";
 import { useRouter } from "vue-router";
 
-export default {
-    name: "NavigationBar",
-    methods: {
-        Vote() {
-            snackbar({
-                message: "投票功能暂未开放",
-                autoCloseDelay: 5000,
-                closeable: true,
-            });
-        },
-    },
-    setup() {
-        const router = useRouter();
-        return {
-            router,
-        };
-    },
-};
 </script>
 
 <template>

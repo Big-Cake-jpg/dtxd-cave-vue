@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 import "mdui/mdui.css";
 import "mdui";
 import "@mdui/icons/menu.js";
