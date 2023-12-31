@@ -8,6 +8,7 @@
     :pageview="pageview"
     :comment="comment"
     :locale="locale"
+    :dark="dark"
   />
 </template>
 <script setup>
@@ -36,6 +37,7 @@ const locale = {
   placeholder:
     "在这里填写你想要发送的内容。请勿提交或上传任何违反「使用守则」的内容",
 };
+const dark = 'html[class="mdui-custom-color-scheme-4286651679-0 mdui-theme-dark"]';
 </script>
 
 <style>
