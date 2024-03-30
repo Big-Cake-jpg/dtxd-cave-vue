@@ -1,19 +1,21 @@
 import { defineConfig } from "vite";
-import ViteVue from "@vitejs/plugin-vue";
+import vue from "@vitejs/plugin-vue";
 import VitePages from "vite-plugin-pages";
 import ViteMarkdown from "vite-plugin-md";
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import commonjs from "@rollup/plugin-commonjs";
+import UnoCSS from "unocss/vite";
 
 export default defineConfig({
   plugins: [
     commonjs(),
-    ViteVue({
+    vue({
       include: [/\.vue$/, /\.md$/],
       template: {
         compilerOptions: {
-          isCustomElement: (tag) => tag.startsWith("mdui-"),
+          isCustomElement: (tag) =>
+            tag.startsWith("mdui-") || tag.startsWith("meting-"),
         },
       },
     }),
@@ -29,6 +31,10 @@ export default defineConfig({
     }),
     Components({
       extensions: ["vue", "md"],
+    }),
+
+    UnoCSS({
+      mode: "shadow-dom",
     }),
   ],
 });

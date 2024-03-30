@@ -16,7 +16,7 @@ import "@mdui/icons/wb-sunny--outlined.js";
   <div class="content mdui-prose">
     <h1>大唐现代回声洞 <mdui-badge>Beta</mdui-badge></h1>
     <p>欢迎来到大唐现代回声洞，大家可以在这里<b>匿名地</b>畅所欲言。</p>
-    <p>如果愿意进行留言，请务必遵守<RouterLink to="/">「使用守则」</RouterLink>。</p>
+    <p>如果愿意进行留言，请务必遵守<RouterLink to="/policies">「使用守则」</RouterLink>。</p>
     <mdui-button href="https://dtxd-comment.lihaoyu.cn/ui" target="_blank"
       >注册账号<mdui-icon-account-circle slot="icon"></mdui-icon-account-circle
       ><mdui-icon-arrow-forward slot="end-icon"></mdui-icon-arrow-forward
@@ -44,9 +44,9 @@ import "@mdui/icons/wb-sunny--outlined.js";
     </h2>
     <p>
       <mdui-icon-remove-red-eye--outlined></mdui-icon-remove-red-eye--outlined>
-      页面浏览量: <b><span class="waline-pageview-count" /></b><br />
+      页面浏览量: <b><span class="waline-pageview-count" data-path="/" /></b><br />
       <mdui-icon-comment--outlined></mdui-icon-comment--outlined>
-      留言数量：<b><span class="waline-comment-count" /></b>
+      留言数量：<b><span class="waline-comment-count" data-path="/" /></b>
     </p>
     <h2>
       <mdui-icon-info--outlined></mdui-icon-info--outlined>
@@ -67,7 +67,7 @@ import "@mdui/icons/wb-sunny--outlined.js";
     </h2>
     <p>
       <b
-        ><a href="https://lihaoyu.cn">晓雨杂记</a>
+        ><a href="https://www.lihaoyu.cn">晓雨杂记</a>
         <!-- <a href="https://bjwz.yuzu-soft.cf">北京五中树洞</a> --></b
       >
     </p>
@@ -76,11 +76,3 @@ import "@mdui/icons/wb-sunny--outlined.js";
     <WalineClient />
   </div>
 </template>
-
-<style>
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1em;
-}
-</style>

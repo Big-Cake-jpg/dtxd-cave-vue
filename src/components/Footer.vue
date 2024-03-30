@@ -1,6 +1,6 @@
 <template>
   <div class="mdui-prose footer">
-    <meting-js server="netease" type="song" id="2108526564" theme="#811d1f">
+    <meting-js server="netease" type="song" id="1860937248" theme="#811d1f">
     </meting-js>
     <p>
       由 <a href="https://cn.vuejs.org" target="_blank">Vue.js</a> 与
@@ -10,6 +10,9 @@
       © 2024 <a href="https://lihaoyu.cn" target="_blank">Big_Cake</a> All
       rights reserved.
     </p>
+    <p>
+      <a href="https://beian.miit.gov.cn">晋 ICP 备 20240031556 号 - 1</a>
+    </p>
   </div>
 </template>
 <style>
@@ -18,10 +21,18 @@
   margin-bottom: 50px;
   text-align: center;
 }
+
+@media (max-width: 1000px) {
+  .footer {
+    margin-bottom: 100px;
+  }
+}
+
 .aplayer {
   max-width: 500px;
   margin: 0 auto;
 }
+
 .mdui-theme-dark {
   .aplayer {
     max-width: 500px;
@@ -65,11 +76,7 @@
   }
 
   .aplayer.aplayer-withlist .aplayer-icon-order,
-  .aplayer.aplayer-withlist
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-time
-    .aplayer-icon.aplayer-icon-menu {
+  .aplayer.aplayer-withlist .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.aplayer-icon-menu {
     display: inline;
   }
 
@@ -223,20 +230,11 @@
     display: none;
   }
 
-  .aplayer.aplayer-loading
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-loading-icon {
+  .aplayer.aplayer-loading .aplayer-info .aplayer-controller .aplayer-loading-icon {
     display: block;
   }
 
-  .aplayer.aplayer-loading
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-bar-wrap
-    .aplayer-bar
-    .aplayer-played
-    .aplayer-thumb {
+  .aplayer.aplayer-loading .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
@@ -393,13 +391,7 @@
     flex: 1;
   }
 
-  .aplayer
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-bar-wrap:hover
-    .aplayer-bar
-    .aplayer-played
-    .aplayer-thumb {
+  .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap:hover .aplayer-bar .aplayer-played .aplayer-thumb {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
@@ -411,12 +403,7 @@
     background: #626262;
   }
 
-  .aplayer
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-bar-wrap
-    .aplayer-bar
-    .aplayer-loaded {
+  .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {
     position: absolute;
     left: 0;
     top: 0;
@@ -426,12 +413,7 @@
     transition: all 0.5s ease;
   }
 
-  .aplayer
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-bar-wrap
-    .aplayer-bar
-    .aplayer-played {
+  .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
     position: absolute;
     left: 0;
     top: 0;
@@ -439,13 +421,7 @@
     height: 2px;
   }
 
-  .aplayer
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-bar-wrap
-    .aplayer-bar
-    .aplayer-played
-    .aplayer-thumb {
+  .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
     position: absolute;
     top: 0;
     right: 5px;
@@ -483,38 +459,17 @@
     fill: #aeaeae;
   }
 
-  .aplayer
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-time
-    .aplayer-icon.aplayer-icon-loop {
+  .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.aplayer-icon-loop {
     margin-right: 2px;
   }
 
-  .aplayer
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-time
-    .aplayer-icon:hover
-    path {
+  .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon:hover path {
     fill: #fff;
   }
 
-  .aplayer
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-time
-    .aplayer-icon.aplayer-icon-menu,
-  .aplayer
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-time.aplayer-time-narrow
-    .aplayer-icon-menu,
-  .aplayer
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-time.aplayer-time-narrow
-    .aplayer-icon-mode {
+  .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.aplayer-icon-menu,
+  .aplayer .aplayer-info .aplayer-controller .aplayer-time.aplayer-time-narrow .aplayer-icon-menu,
+  .aplayer .aplayer-info .aplayer-controller .aplayer-time.aplayer-time-narrow .aplayer-icon-mode {
     display: none;
   }
 
@@ -525,19 +480,11 @@
     cursor: pointer !important;
   }
 
-  .aplayer
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-volume-wrap:hover
-    .aplayer-volume-bar-wrap {
+  .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap:hover .aplayer-volume-bar-wrap {
     height: 40px;
   }
 
-  .aplayer
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-volume-wrap
-    .aplayer-volume-bar-wrap {
+  .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap {
     position: absolute;
     bottom: 15px;
     right: -3px;
@@ -548,20 +495,11 @@
     transition: all 0.2s ease-in-out;
   }
 
-  .aplayer
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-volume-wrap
-    .aplayer-volume-bar-wrap.aplayer-volume-bar-wrap-active {
+  .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap.aplayer-volume-bar-wrap-active {
     height: 40px;
   }
 
-  .aplayer
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-volume-wrap
-    .aplayer-volume-bar-wrap
-    .aplayer-volume-bar {
+  .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar {
     position: absolute;
     bottom: 0;
     right: 10px;
@@ -572,13 +510,7 @@
     overflow: hidden;
   }
 
-  .aplayer
-    .aplayer-info
-    .aplayer-controller
-    .aplayer-volume-wrap
-    .aplayer-volume-bar-wrap
-    .aplayer-volume-bar
-    .aplayer-volume {
+  .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar .aplayer-volume {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -608,12 +540,10 @@
   .aplayer .aplayer-lrc:before {
     top: 0;
     height: 10%;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.8) 0,
-      hsla(0, 0%, 0%, 0)
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="rgba(0,0,0,.8)fff",endColorstr="#00ffffff",GradientType=0);
+    background: linear-gradient(180deg,
+        rgba(0, 0, 0, 0.8) 0,
+        hsla(0, 0%, 0%, 0));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="rgba(0,0,0,.8)fff", endColorstr="#00ffffff", GradientType=0);
   }
 
   .aplayer .aplayer-lrc:after,
@@ -629,12 +559,10 @@
   .aplayer .aplayer-lrc:after {
     bottom: 0;
     height: 33%;
-    background: linear-gradient(
-      180deg,
-      hsla(0, 0%, 0%, 0) 0,
-      hsla(0, 0%, 0%, 0.8)
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffffff",endColorstr="#ccffffff",GradientType=0);
+    background: linear-gradient(180deg,
+        hsla(0, 0%, 0%, 0) 0,
+        hsla(0, 0%, 0%, 0.8));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffffff", endColorstr="#ccffffff", GradientType=0);
   }
 
   .aplayer .aplayer-lrc p {
