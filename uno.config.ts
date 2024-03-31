@@ -9,12 +9,12 @@ export default defineConfig({
         ['m-c', { margin: '0 auto' }],
       ]
     }),
-    presetWebFonts({
+    /* presetWebFonts({
       provider: 'google',
       fonts: {
         sans: 'Noto Sans SC',
       },
       inlineImports: true,
-    }),
+    }), */
   ],
 })
