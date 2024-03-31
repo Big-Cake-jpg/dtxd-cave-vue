@@ -1,5 +1,6 @@
 <script>
 import WalineClient from "./WalineClient.vue";
+import 'mdui/components/button.js';
 import "@mdui/icons/announcement--outlined.js";
 import "@mdui/icons/link.js";
 import "@mdui/icons/comment--outlined.js";

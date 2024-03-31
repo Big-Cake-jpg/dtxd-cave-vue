@@ -1,17 +1,19 @@
 <script lang="ts">
-import "mdui/mdui.css";
-import "mdui";
 import "@mdui/icons/menu.js";
 import "@mdui/icons/contrast.js";
 import "@mdui/icons/home.js";
 import "@mdui/icons/balance.js";
 import "@mdui/icons/how-to-vote.js";
 import "@mdui/icons/outbound--outlined.js";
+import 'mdui/components/button-icon.js';
+import 'mdui/components/top-app-bar.js';
+import 'mdui/components/top-app-bar-title.js';
+import 'mdui/components/tooltip.js';
 
 import { useDark } from "@vueuse/core";
 import { useToggle } from "@vueuse/shared";
 
-import { ref, onMounted, reactive } from 'vue';
+import { ref, onMounted } from 'vue';
 const navigationDrawer = ref<HTMLElement | null>(null);
 const openButton = ref<HTMLElement | null>(null);
 const closeButton = ref<HTMLElement | null>(null);

@@ -1,6 +1,4 @@
 <script>
-import "mdui/mdui.css";
-import "mdui";
 import { snackbar } from "mdui";
 import "@mdui/icons/home.js";
 import "@mdui/icons/home--outlined.js";

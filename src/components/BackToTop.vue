@@ -2,6 +2,7 @@
 import { isClient, useWindowScroll } from '@vueuse/core'
 import { ref, watch } from 'vue'
 import '@mdui/icons/arrow-upward.js'
+import 'mdui/components/fab.js';
 
 const { y } = useWindowScroll()
 const fabExtended = ref(false)
@@ -37,13 +38,13 @@ watch(() => y.value, () => {
 
 <style scoped>
 .mdui-back-to-top {
-  z-index: 1919810114514;
+  z-index: 1919810;
 }
 
 .backtotop {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 1919810114514;
+  z-index: 1919810;
 }
 </style>
