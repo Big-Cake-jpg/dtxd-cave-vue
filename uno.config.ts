@@ -12,7 +12,7 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-        sans: 'Roboto',
+        sans: 'Noto Sans SC',
       },
       inlineImports: true,
     }),
