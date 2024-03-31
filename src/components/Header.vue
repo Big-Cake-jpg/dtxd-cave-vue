@@ -1,10 +1,10 @@
 <script lang="ts">
 import "@mdui/icons/menu.js";
 import "@mdui/icons/contrast.js";
-import "@mdui/icons/home.js";
-import "@mdui/icons/balance.js";
-import "@mdui/icons/how-to-vote.js";
-import "@mdui/icons/outbound--outlined.js";
+// import "@mdui/icons/home.js";
+// import "@mdui/icons/balance.js";
+// import "@mdui/icons/how-to-vote.js";
+// import "@mdui/icons/outbound--outlined.js";
 import 'mdui/components/button-icon.js';
 import 'mdui/components/top-app-bar.js';
 import 'mdui/components/top-app-bar-title.js';
@@ -55,7 +55,7 @@ export default {
     </mdui-tooltip>
   </mdui-top-app-bar>
 
-  <mdui-navigation-drawer modal close-on-overlay-click class="drawer" close-on-esc ref="navigationDrawer">
+  <!-- <mdui-navigation-drawer modal close-on-overlay-click class="drawer" close-on-esc ref="navigationDrawer">
     <mdui-list>
       <mdui-list-subheader>主站</mdui-list-subheader>
       <mdui-list-item active @click="toggleDrawer">
@@ -76,7 +76,7 @@ export default {
         <mdui-icon-outbound--outlined slot="icon"></mdui-icon-outbound--outlined>
       </mdui-list-item>
     </mdui-list>
-  </mdui-navigation-drawer>
+  </mdui-navigation-drawer> -->
 </template>
 
 <style scoped>

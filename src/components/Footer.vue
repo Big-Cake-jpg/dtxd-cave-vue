@@ -1,5 +1,5 @@
 <template>
-  <div class="mdui-prose footer">
+  <div class="mdui-prose mb-24 text-center mt-12">
     <meting-js server="netease" type="song" id="1860937248" theme="#811d1f">
     </meting-js>
     <p>
@@ -7,7 +7,7 @@
       <a href="https://cn.vitejs.dev" target="_blank">Vite.js</a> 强力驱动。
     </p>
     <p>
-      © 2024 <a href="https://lihaoyu.cn" target="_blank">Big_Cake</a> All
+      © 2024 <a href="https://www.lihaoyu.cn" target="_blank">Big_Cake</a> All
       rights reserved.
     </p>
     <p>
@@ -16,18 +16,6 @@
   </div>
 </template>
 <style>
-.footer {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-@media (max-width: 1000px) {
-  .footer {
-    margin-bottom: 100px;
-  }
-}
-
 .aplayer {
   max-width: 500px;
   margin: 0 auto;

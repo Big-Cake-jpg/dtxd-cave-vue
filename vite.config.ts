@@ -33,8 +33,6 @@ export default defineConfig({
       extensions: ["vue", "md"],
     }),
 
-    UnoCSS({
-      mode: "shadow-dom",
-    }),
+    UnoCSS(),
   ],
 });

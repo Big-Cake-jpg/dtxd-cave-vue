@@ -7,11 +7,11 @@ useTitle('使用守则与声明 - 大唐现代回声洞 v3 - Beta 版');
 </script>
 
 <template>
-  <div class="content">
+  <div class="p-4 max-w-screen-md m-auto">
     <RouterLink to="/"><mdui-button><mdui-icon-arrow-back slot="icon"></mdui-icon-arrow-back>返回首页</mdui-button>
     </RouterLink>
   </div>
-  <div class="mdui-prose content">
+  <div class="mdui-prose p-4 max-w-screen-md m-auto mdui-prose">
     <h1>使用守则与声明</h1>
     <p>最后更新：2023 年 2 月 18 日</p>
     <mdui-divider></mdui-divider>
@@ -103,7 +103,7 @@ useTitle('使用守则与声明 - 大唐现代回声洞 v3 - Beta 版');
       用户因违反国家法律法规或本条款的约定而给大唐现代造成损失的，用户应赔偿大唐现代因此而造成的一切损失，并消除影响。
     </p>
     <mdui-divider></mdui-divider>
-    <h2>5.其他规定</h2>
+    <h2>5. 其他规定</h2>
     <p>
       如本协议中的任何条款因任何原因部分无效或不具有执行力，不影响本协议中其余条款对双方的约束力。
       本协议条款的标题仅为方便阅读而设，不作为解释本协议条款的依据。

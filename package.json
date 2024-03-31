@@ -12,30 +12,33 @@
   "dependencies": {
     "@mdui/icons": "^1.0.2",
     "@rollup/plugin-commonjs": "^25.0.7",
+    "@unocss/vite": "^0.58.8",
     "@vueuse/core": "^10.9.0",
     "@vueuse/integrations": "^10.9.0",
     "@vueuse/shared": "^10.9.0",
-    "@waline/client": "v2",
+    "@waline/client": "^2.15.8",
     "aplayer": "^1.10.1",
-    "mdui": "^2.0.3",
+    "mdui": "^2.0.6",
     "meting": "^2.0.1",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
-    "unplugin-auto-import": "^0.17.3",
+    "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-components": "^0.26.0",
-    "vue": "^3.3.11"
+    "vue": "^3.4.21"
   },
   "devDependencies": {
     "@types/nprogress": "^0.2.3",
-    "@vitejs/plugin-vue": "^4.5.2",
+    "@unocss/preset-uno": "^0.58.8",
+    "@unocss/preset-web-fonts": "^0.58.8",
+    "@vitejs/plugin-vue": "^4.6.2",
     "@vueuse/head": "^2.0.0",
-    "typescript": "^5.2.2",
+    "typescript": "^5.4.3",
     "unocss": "^0.58.8",
-    "vite": "^5.0.8",
+    "vite": "^5.2.7",
     "vite-plugin-md": "^0.21.5",
-    "vite-plugin-pages": "^0.32.0",
+    "vite-plugin-pages": "^0.32.1",
     "vite-ssg": "^0.23.6",
-    "vue-router": "4",
-    "vue-tsc": "^1.8.25"
+    "vue-router": "^4.3.0",
+    "vue-tsc": "^1.8.27"
   }
 }

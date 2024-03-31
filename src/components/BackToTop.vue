@@ -22,29 +22,10 @@ watch(() => y.value, () => {
 </script>
 
 <template>
-  <div class="backtotop">
-    <Transition name="fade">
-      <mdui-fab
-        :extended="fabExtended"
-        class="mdui-back-to-top"
-        @click="backToTop"
-      >
-        返回顶部
-        <mdui-icon-arrow-upward slot="icon" />
-      </mdui-fab>
-    </Transition>
+  <div>
+    <mdui-fab :extended="fabExtended" class="z-1919 fixed bottom-5 right-5" @click="backToTop">
+      返回顶部
+      <mdui-icon-arrow-upward slot="icon" />
+    </mdui-fab>
   </div>
 </template>
-
-<style scoped>
-.mdui-back-to-top {
-  z-index: 1919810;
-}
-
-.backtotop {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1919810;
-}
-</style>
