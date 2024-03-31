@@ -23,7 +23,7 @@ watch(() => y.value, () => {
 
 <template>
   <div>
-    <mdui-fab :extended="fabExtended" class="z-1919 fixed bottom-5 right-5" @click="backToTop">
+    <mdui-fab :extended="fabExtended" class="z-1919 fixed bottom-5 right-5 font-sans" @click="backToTop">
       返回顶部
       <mdui-icon-arrow-upward slot="icon" />
     </mdui-fab>

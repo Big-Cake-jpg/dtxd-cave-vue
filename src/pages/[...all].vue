@@ -11,12 +11,12 @@ export default {
 </script>
 
 <template>
-    <div class="mdui-prose p-4 max-w-screen-md m-auto ">
+    <div class="mdui-prose p-4 max-w-screen-md m-auto font-sans">
         <h1>404 未找到页面</h1>
         <p>呃……这个页面不存在呢，请检查你是否输入了正确的链接。</p>
         <p>如果你确定这不应该出现，你应该<RouterLink to="/policies">联系我</RouterLink>。</p>
     </div>
-    <div class="p-4 max-w-screen-md m-auto">
+    <div class="p-4 max-w-screen-md m-auto font-sans">
         <RouterLink to="/"><mdui-button><mdui-icon-arrow-back slot="icon"></mdui-icon-arrow-back>返回首页</mdui-button>
         </RouterLink>
     </div>

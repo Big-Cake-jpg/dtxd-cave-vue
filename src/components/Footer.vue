@@ -1,5 +1,5 @@
 <template>
-  <div class="mdui-prose mb-24 text-center mt-12">
+  <div class="mdui-prose mb-24 text-center mt-12 font-sans">
     <meting-js server="netease" type="song" id="1860937248" theme="#811d1f">
     </meting-js>
     <p>

@@ -19,8 +19,8 @@ const openButton = ref<HTMLElement | null>(null);
 const closeButton = ref<HTMLElement | null>(null);
 
 onMounted(() => {
-    openButton.value?.addEventListener("click", () => (navigationDrawer.value as any).open = true);
-    closeButton.value?.addEventListener("click", () => (navigationDrawer.value as any).open = false);
+  openButton.value?.addEventListener("click", () => (navigationDrawer.value as any).open = true);
+  closeButton.value?.addEventListener("click", () => (navigationDrawer.value as any).open = false);
 });
 
 export default {
@@ -41,19 +41,21 @@ export default {
 </script>
 
 <template>
-  <mdui-top-app-bar scroll-behavior="elevate hide">
-    <mdui-tooltip placement="bottom-right" content="菜单（未完成）">
-      <mdui-button-icon ref="openButton">
-        <mdui-icon-menu></mdui-icon-menu>
-      </mdui-button-icon>
-    </mdui-tooltip>
-    <mdui-top-app-bar-title>大唐现代回声洞</mdui-top-app-bar-title>
-    <mdui-tooltip placement="bottom-left" content="切换模式">
-      <mdui-button-icon @click="toggleDark()">
-        <mdui-icon-contrast></mdui-icon-contrast>
-      </mdui-button-icon>
-    </mdui-tooltip>
-  </mdui-top-app-bar>
+  <div class="font-sans">
+    <mdui-top-app-bar scroll-behavior="elevate hide">
+      <mdui-tooltip placement="bottom-right" content="菜单（未完成）">
+        <mdui-button-icon ref="openButton">
+          <mdui-icon-menu></mdui-icon-menu>
+        </mdui-button-icon>
+      </mdui-tooltip>
+      <mdui-top-app-bar-title>大唐现代回声洞</mdui-top-app-bar-title>
+      <mdui-tooltip placement="bottom-left" content="切换模式">
+        <mdui-button-icon @click="toggleDark()">
+          <mdui-icon-contrast></mdui-icon-contrast>
+        </mdui-button-icon>
+      </mdui-tooltip>
+    </mdui-top-app-bar>
+  </div>
 
   <!-- <mdui-navigation-drawer modal close-on-overlay-click class="drawer" close-on-esc ref="navigationDrawer">
     <mdui-list>

@@ -14,7 +14,7 @@ import "@mdui/icons/wb-sunny--outlined.js";
 </script>
 
 <template>
-  <div class="p-4 max-w-screen-md m-auto mdui-prose">
+  <div class="p-4 max-w-screen-md m-auto mdui-prose font-sans">
     <h1>大唐现代回声洞 <mdui-badge>Beta</mdui-badge></h1>
     <p>欢迎来到大唐现代回声洞，大家可以在这里<b>匿名地</b>畅所欲言。</p>
     <p>
@@ -69,7 +69,7 @@ import "@mdui/icons/wb-sunny--outlined.js";
         <!-- <a href="https://bjwz.yuzu-soft.cf">北京五中树洞</a> --></b>
     </p>
   </div>
-  <div class="p-4 max-w-screen-md m-auto mdui-prose">
+  <div class="p-4 max-w-screen-md m-auto mdui-prose font-sans">
     <WalineClient />
   </div>
 </template>

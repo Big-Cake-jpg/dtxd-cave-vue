@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<template class="font-sans">
+<template>
   <Loading v-if="loading" />
   <Header />
   <BackToTop />

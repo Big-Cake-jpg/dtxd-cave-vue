@@ -7,11 +7,11 @@ useTitle('使用守则与声明 - 大唐现代回声洞 v3 - Beta 版');
 </script>
 
 <template>
-  <div class="p-4 max-w-screen-md m-auto">
+  <div class="p-4 max-w-screen-md m-auto font-sans">
     <RouterLink to="/"><mdui-button><mdui-icon-arrow-back slot="icon"></mdui-icon-arrow-back>返回首页</mdui-button>
     </RouterLink>
   </div>
-  <div class="mdui-prose p-4 max-w-screen-md m-auto mdui-prose">
+  <div class="mdui-prose p-4 max-w-screen-md m-auto mdui-prose font-sans">
     <h1>使用守则与声明</h1>
     <p>最后更新：2023 年 2 月 18 日</p>
     <mdui-divider></mdui-divider>
