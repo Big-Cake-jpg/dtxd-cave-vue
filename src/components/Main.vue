@@ -2,6 +2,7 @@
 import WalineClient from "./WalineClient.vue";
 import "mdui/components/button.js";
 import "mdui/components/badge.js";
+import 'mdui/components/divider.js';
 import "@mdui/icons/announcement--outlined.js";
 import "@mdui/icons/link.js";
 import "@mdui/icons/comment--outlined.js";
@@ -68,8 +69,9 @@ import "@mdui/icons/wb-sunny--outlined.js";
       <b><a href="https://www.lihaoyu.cn">晓雨杂记</a>
         <!-- <a href="https://bjwz.yuzu-soft.cf">北京五中树洞</a> --></b>
     </p>
+    <mdui-divider></mdui-divider>
   </div>
-  <div class="p-4 max-w-screen-md m-auto mdui-prose font-sans">
+  <div class="p-4 max-w-screen-md m-auto font-sans">
     <WalineClient />
   </div>
 </template>

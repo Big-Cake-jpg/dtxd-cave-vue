@@ -4,11 +4,7 @@ import presetUno from '@unocss/preset-uno'
 
 export default defineConfig({
   presets: [
-    presetUno({
-      rules: [
-        ['m-c', { margin: '0 auto' }],
-      ]
-    }),
+    presetUno(),
     /* presetWebFonts({
       provider: 'google',
       fonts: {

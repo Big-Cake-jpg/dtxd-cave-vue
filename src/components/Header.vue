@@ -44,7 +44,7 @@ export default {
   <div class="font-sans">
     <mdui-top-app-bar scroll-behavior="elevate hide">
       <mdui-tooltip placement="bottom-right" content="菜单（未完成）">
-        <mdui-button-icon ref="openButton">
+        <mdui-button-icon disabled ref="openButton">
           <mdui-icon-menu></mdui-icon-menu>
         </mdui-button-icon>
       </mdui-tooltip>
