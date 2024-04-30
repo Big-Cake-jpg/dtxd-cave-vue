@@ -39,6 +39,9 @@ export default defineConfig({
         short_name: "大唐现代回声洞",
         description: "大唐现代回声洞，想说什么就说什么！",
         theme_color: "#811d1f",
+        dir: "ltr",
+        display: "minimal-ui",
+        start_url: "/",
         lang: "zh-CN",
       },
       pwaAssets: {
