@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 
 .vercel
+
+.vite-ssg-temp
+
+vite.config.ts.timestamp*

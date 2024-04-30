@@ -25,11 +25,11 @@ const search = false;
 const pageview = true;
 const comment = true;
 const emojis = [
-  "https://jsd.onmicrosoft.cn/npm/@waline/emojis@latest/bilibili/",
-  "https://jsd.onmicrosoft.cn/npm/@waline/emojis@latest/weibo/",
-  "https://jsd.onmicrosoft.cn/npm/@waline/emojis@latest/qq/",
-  "https://jsd.onmicrosoft.cn/npm/@waline/emojis@latest/tieba/",
-  "https://jsd.onmicrosoft.cn/gh/walinejs/emojis@latest/bmoji/",
+  "https://jsd.cdn.zzko.cn/npm/@waline/emojis@latest/bilibili/",
+  "https://jsd.cdn.zzko.cn/npm/@waline/emojis@latest/weibo/",
+  "https://jsd.cdn.zzko.cn/npm/@waline/emojis@latest/qq/",
+  "https://jsd.cdn.zzko.cn/npm/@waline/emojis@latest/tieba/",
+  "https://jsd.cdn.zzko.cn/npm/@waline/emojis@latest/bmoji/",
 ];
 const locale = {
   optional: "可选项目",
