@@ -50,6 +50,7 @@ export default defineConfig({
         injectThemeColor: true,
       },
       workbox: {
+        navigateFallbackDenylist: [/^\/_vercel/],
         globPatterns: ["**/*.{css,js,html,svg,png,ico,txt,woff2}"],
         globIgnores: ["/_vercel/*"],
         runtimeCaching: [
