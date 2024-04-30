@@ -50,7 +50,8 @@ export default defineConfig({
         injectThemeColor: true,
       },
       workbox: {
-        globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2}'],
+        globPatterns: ["**/*.{css,js,html,svg,png,ico,txt,woff2}"],
+        globIgnores: ["/_vercel/*"],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/dtxd-comment\.lihaoyu\.cn\/.*/i,
