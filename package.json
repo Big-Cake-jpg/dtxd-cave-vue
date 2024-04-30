@@ -13,6 +13,7 @@
     "@mdui/icons": "^1.0.2",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@unocss/vite": "^0.58.9",
+    "@vercel/analytics": "^1.2.2",
     "@vercel/nft": "^0.26.4",
     "@vueuse/core": "^10.9.0",
     "@vueuse/integrations": "^10.9.0",

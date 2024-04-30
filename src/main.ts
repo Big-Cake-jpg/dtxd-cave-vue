@@ -6,6 +6,9 @@ import routes from "~pages";
 import "mdui/mdui.css";
 import 'virtual:uno.css'
 import { setColorScheme } from 'mdui/functions/setColorScheme.js';
+import { inject } from '@vercel/analytics';
+ 
+inject();
 
 if (typeof window !== 'undefined')
     import('./pwa')
