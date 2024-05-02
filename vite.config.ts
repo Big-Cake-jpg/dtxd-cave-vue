@@ -40,7 +40,7 @@ export default defineConfig({
         description: "大唐现代回声洞，想说什么就说什么！",
         theme_color: "#811d1f",
         dir: "ltr",
-        display: "minimal-ui",
+        display: "standalone",
         start_url: "/",
         lang: "zh-CN",
       },
