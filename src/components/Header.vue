@@ -9,6 +9,7 @@ import 'mdui/components/button-icon.js';
 import 'mdui/components/top-app-bar.js';
 import 'mdui/components/top-app-bar-title.js';
 import 'mdui/components/tooltip.js';
+import { setTheme } from 'mdui/functions/setTheme.js';
 
 import { useDark } from "@vueuse/core";
 import { useToggle } from "@vueuse/shared";
@@ -26,10 +27,9 @@ onMounted(() => {
 export default {
   setup() {
     const isDark = useDark({
-      selector: "html",
-      attribute: "class",
-      valueDark: "mdui-theme-dark",
-      valueLight: "mdui-theme-light",
+      onChanged(dark: boolean) {
+        setTheme(dark ? "dark" : "light");
+      },
     });
     const toggleDark = useToggle(isDark);
 
@@ -43,14 +43,14 @@ export default {
 <template>
   <div class="font-sans">
     <mdui-top-app-bar scroll-behavior="elevate hide">
-      <mdui-tooltip placement="bottom-right" content="菜单（未完成）">
-        <mdui-button-icon disabled ref="openButton">
+      <mdui-tooltip placement="bottom-right" content="侧边菜单（未完成）">
+        <mdui-button-icon disabled ref="openButton" alt="侧边菜单（未完成）">
           <mdui-icon-menu></mdui-icon-menu>
         </mdui-button-icon>
       </mdui-tooltip>
       <mdui-top-app-bar-title>大唐现代回声洞</mdui-top-app-bar-title>
       <mdui-tooltip placement="bottom-left" content="切换模式">
-        <mdui-button-icon @click="toggleDark()">
+        <mdui-button-icon @click="toggleDark()" alt="切换模式">
           <mdui-icon-contrast></mdui-icon-contrast>
         </mdui-button-icon>
       </mdui-tooltip>

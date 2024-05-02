@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Loading from './components/Loading.vue'
-import { onMounted, ref } from 'vue';
 import { SpeedInsights } from '@vercel/speed-insights/vue';
 </script>
 
