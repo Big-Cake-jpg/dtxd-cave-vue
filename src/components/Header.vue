@@ -28,7 +28,8 @@ export default {
   setup() {
     const isDark = useDark({
       onChanged(dark: boolean) {
-        setTheme(dark ? "dark" : "light");
+        if (typeof document !== 'undefined')
+          setTheme(dark ? "dark" : "light");
       },
     });
     const toggleDark = useToggle(isDark);
