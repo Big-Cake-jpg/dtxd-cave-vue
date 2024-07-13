@@ -9,7 +9,7 @@
       rights reserved.
     </p>
     <p>
-      <a href="https://beian.miit.gov.cn">晋 ICP 备 20240031556 号 - 1</a>
+      <a href="https://beian.miit.gov.cn">晋 ICP 备 2024031556 号 - 1</a>
     </p>
   </div>
 </template>
