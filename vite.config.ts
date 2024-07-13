@@ -7,6 +7,8 @@ import Components from "unplugin-vue-components/vite";
 import UnoCSS from "unocss/vite";
 import commonjs from "@rollup/plugin-commonjs";
 import { VitePWA } from "vite-plugin-pwa";
+import compression from "vite-plugin-compression2";
+import { ViteMinifyPlugin } from "vite-plugin-minify";
 
 export default defineConfig({
   plugins: [
@@ -71,12 +73,16 @@ export default defineConfig({
         ],
       },
     }),
+    compression(),
+    ViteMinifyPlugin({
+      minifyCSS: true,
+      minifyJS: true,
+      removeComments: true,
+    }),
   ],
   build: {
     rollupOptions: {
-      external: [
-        "sharp"
-      ]
-    }
-  }
+      external: ["sharp"],
+    },
+  },
 });

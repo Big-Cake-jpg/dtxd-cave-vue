@@ -16,7 +16,7 @@ import { Waline } from "@waline/client/component";
 import { computed } from "vue";
 import { useRoute } from "vue-router";
 
-import "@waline/client/dist/waline.css";
+import '@waline/client/style';
 
 const serverURL = "https://dtxd-comment.lihaoyu.cn";
 const imageUploader = false;
@@ -25,11 +25,11 @@ const search = false;
 const pageview = true;
 const comment = true;
 const emojis = [
-  "https://jsd.cdn.zzko.cn/npm/@waline/emojis@latest/bilibili/",
-  "https://jsd.cdn.zzko.cn/npm/@waline/emojis@latest/weibo/",
-  "https://jsd.cdn.zzko.cn/npm/@waline/emojis@latest/qq/",
-  "https://jsd.cdn.zzko.cn/npm/@waline/emojis@latest/tieba/",
-  "https://jsd.cdn.zzko.cn/npm/@waline/emojis@latest/bmoji/",
+  "https://cdn.jsdmirror.com/npm/@waline/emojis@latest/bilibili/",
+  "https://cdn.jsdmirror.com/npm/@waline/emojis@latest/weibo/",
+  "https://cdn.jsdmirror.com/npm/@waline/emojis@latest/qq/",
+  "https://cdn.jsdmirror.com/npm/@waline/emojis@latest/tieba/",
+  "https://cdn.jsdmirror.com/npm/@waline/emojis@latest/bmoji/",
 ];
 const locale = {
   optional: "可选项目",

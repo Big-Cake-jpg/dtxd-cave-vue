@@ -50,9 +50,9 @@ useTitle('首页 - 大唐现代回声洞 v3 - Beta 版');
         </h2>
         <p>
             <mdui-icon-remove-red-eye--outlined></mdui-icon-remove-red-eye--outlined>
-            页面浏览量: <b><span class="waline-pageview-count" data-path="/" /></b><br />
+            页面浏览量: <span class="waline-pageview-count" data-path="/" /><br />
             <mdui-icon-comment--outlined></mdui-icon-comment--outlined>
-            留言数量：<b><span class="waline-comment-count" data-path="/" /></b>
+            留言数量：<span class="waline-comment-count" data-path="/" />
         </p>
         <h2>
             <mdui-icon-info--outlined></mdui-icon-info--outlined>
