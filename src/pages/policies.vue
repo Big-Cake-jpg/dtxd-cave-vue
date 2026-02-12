@@ -11,7 +11,7 @@ useTitle('使用守则与声明 - 大唐现代回声洞 v3 - Beta 版');
   </RouterLink>
   <div class="mdui-prose mt-8">
     <h1>使用守则与声明</h1>
-    <p>最后更新:2023 年 2 月 18 日</p>
+    <p>最后更新:2026 年 2 月 12 日</p>
     <mdui-divider></mdui-divider>
     <h2>0. 免责声明</h2>
     <p>
