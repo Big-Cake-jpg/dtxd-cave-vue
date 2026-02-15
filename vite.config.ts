@@ -34,7 +34,7 @@ export default defineConfig({
     }),
     UnoCSS(),
     VitePWA({
-      registerType: "prompt",
+      registerType: "autoUpdate",
       includeAssets: ["icon.png"],
       manifest: {
         name: "大唐现代回声洞",
@@ -53,7 +53,7 @@ export default defineConfig({
       },
       workbox: {
         navigateFallbackDenylist: [/^\/_vercel/],
-        globPatterns: ["**/*.{css,js,html,svg,png,ico,txt,woff2}"],
+        globPatterns: ["**/*.{css,js,svg,png,ico,txt,woff2}"],
         globIgnores: ["/_vercel/*"],
         runtimeCaching: [
           {
