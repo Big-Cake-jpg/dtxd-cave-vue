@@ -53,7 +53,7 @@ export default defineConfig({
       },
       workbox: {
         navigateFallbackDenylist: [/^\/_vercel/],
-        globPatterns: ["**/*.{css,js,md,html,svg,png,ico,txt,woff2}"],
+        
         globIgnores: ["/_vercel/*"],
         runtimeCaching: [
           {
